@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import { category, MovieCardType } from '../../utils/constant'
 import { baseApi } from '../../api/axiosInstance'
 import MovieList from '../../components/Home/MovieList'
@@ -73,7 +73,7 @@ function Movies() {
                             <button
                                 onClick={() => toggleSelection(item.name)}
                                 className='md:text-base sm:text-sm text-xs font-semibold lg:w-44 md:w-40 sm:w-36 p-2 h-10 hover:bg-[#121212]'>{item.name}</button>
-                            <div className={`h-0.5 bg-blue-400 mx-auto ${filter == item.name ? "w-full" : "w-0"} duration-200`}></div>
+                            <div className={`h-0.5 bg-yellow-500 mx-auto ${filter == item.name ? "w-full" : "w-0"} duration-200`}></div>
                         </div>
                     ))
                 }
